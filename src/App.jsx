@@ -7,6 +7,7 @@ function App() {
     <>
       <Header />
       <DevNotice />
+      <div>Hello</div>
       <Footer />
     </>
   );
