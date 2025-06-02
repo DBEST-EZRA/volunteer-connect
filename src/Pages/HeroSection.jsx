@@ -4,7 +4,7 @@ import heroImage from "../assets/why us.jpg";
 const HeroSection = () => {
   return (
     <section
-      className="text-white position-relative overflow-hidden w-100"
+      className="text-white position-relative overflow-hidden w-100 d-flex align-items-center"
       style={{
         minHeight: "75vh",
         backgroundImage: `url(${heroImage})`,
@@ -21,18 +21,20 @@ const HeroSection = () => {
 
       {/* Text Content */}
       <div
-        className="container h-100 d-flex align-items-center justify-content-center text-center position-relative"
+        className="container position-relative z-2 text-center"
         style={{ zIndex: 2 }}
       >
-        <div className="px-3">
-          <small className="text-uppercase fw-semibold">
-            GET ON THE RIGHT WAY
-          </small>
-          <h1 className="fw-bold display-4">Transforming Workplaces</h1>
+        <div className="row justify-content-center">
+          <div className="col-md-10 col-lg-8">
+            <small className="text-uppercase fw-semibold">
+              GET ON THE RIGHT WAY
+            </small>
+            <h1 className="fw-bold display-4">Transforming Workplaces</h1>
+          </div>
         </div>
       </div>
 
-      {/* Responsive height override for smaller devices */}
+      {/* Responsive height override */}
       <style>
         {`
           @media (max-width: 767.98px) {

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Services.css";
+import "./Services.css"; // Optional for your custom styles
 
 const services = [
   {
@@ -48,35 +48,37 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="container py-5">
-      <div className="row g-4">
-        {services.map((service, index) => (
-          <div
-            className="col-md-6 col-lg-4"
-            key={index}
-            data-aos="fade-up"
-            data-aos-delay={index * 100}
-          >
-            <div className="service-card p-4 h-100 border shadow-sm d-flex align-items-start gap-3">
-              {/* Icon on the left */}
-              <i className={`bi ${service.icon} fs-1 text-danger`}></i>
+    <section className="py-5 w-100 overflow-hidden">
+      <div className="container">
+        <div className="row g-4">
+          {services.map((service, index) => (
+            <div
+              className="col-md-6 col-lg-4"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <div className="service-card p-4 h-100 border shadow-sm d-flex align-items-start gap-3">
+                {/* Icon */}
+                <i className={`bi ${service.icon} fs-1 text-danger`}></i>
 
-              {/* Content */}
-              <div>
-                <h5 className="text-uppercase fw-bold text-black">
-                  {service.title}
-                </h5>
-                <p className="text-muted">{service.description}</p>
-                <a
-                  href="#"
-                  className="read-more text-danger d-inline-flex align-items-center"
-                >
-                  <span className="me-1">➔</span> Read More
-                </a>
+                {/* Text */}
+                <div>
+                  <h5 className="text-uppercase fw-bold text-black">
+                    {service.title}
+                  </h5>
+                  <p className="text-muted">{service.description}</p>
+                  <a
+                    href="#"
+                    className="read-more text-danger d-inline-flex align-items-center"
+                  >
+                    <span className="me-1">➔</span> Read More
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
