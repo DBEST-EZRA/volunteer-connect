@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./WhyUs.css";
+import image1 from "../assets/why us.jpg";
 
 const WhyUs = () => {
   return (
@@ -9,7 +10,7 @@ const WhyUs = () => {
         {/* Image Section */}
         <div className="col-md-6 mb-4 mb-md-0 text-center">
           <img
-            src="/your-image-path/why-us.png" // Replace with actual image path
+            src={image1} // Replace with actual image path
             alt="Why Us"
             className="img-fluid rounded shadow-sm"
           />

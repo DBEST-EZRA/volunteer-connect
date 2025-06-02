@@ -1,5 +1,6 @@
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import Services from "./Pages/Services";
 import WhyUs from "./Pages/WhyUs";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <WhyUs />
+      <Services />
       <Footer />
     </>
   );
