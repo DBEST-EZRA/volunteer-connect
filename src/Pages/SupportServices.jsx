@@ -43,7 +43,7 @@ const SupportServices = () => {
                 style={{ height: "240px", objectFit: "cover" }}
               />
               <div className="card-body text-center bg-white">
-                <h5 className="card-title fw-bold text-primary mb-0">
+                <h5 className="card-title fw-bold text-black mb-0">
                   {service.title}
                 </h5>
               </div>

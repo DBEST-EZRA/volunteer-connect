@@ -57,20 +57,23 @@ const Services = () => {
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            <div className="service-card p-4 h-100 border shadow-sm">
-              <div className="text-center mb-3">
-                <i className={`bi ${service.icon} service-icon`}></i>
+            <div className="service-card p-4 h-100 border shadow-sm d-flex align-items-start gap-3">
+              {/* Icon on the left */}
+              <i className={`bi ${service.icon} fs-1 text-danger`}></i>
+
+              {/* Content */}
+              <div>
+                <h5 className="text-uppercase fw-bold text-black">
+                  {service.title}
+                </h5>
+                <p className="text-muted">{service.description}</p>
+                <a
+                  href="#"
+                  className="read-more text-danger d-inline-flex align-items-center"
+                >
+                  <span className="me-1">➔</span> Read More
+                </a>
               </div>
-              <h5 className="text-uppercase fw-bold text-primary">
-                {service.title}
-              </h5>
-              <p className="text-muted">{service.description}</p>
-              <a
-                href="#"
-                className="read-more text-danger d-inline-flex align-items-center"
-              >
-                <span className="me-1">➔</span> Read More
-              </a>
             </div>
           </div>
         ))}

@@ -90,7 +90,7 @@ const FootprintSection = () => {
         {/* Left Column */}
         <div className="col-lg-6" data-aos="fade-right">
           <h6 className="text-danger fw-bold">Our Footprint</h6>
-          <h2 className="fw-bold text-primary">
+          <h2 className="fw-bold text-black">
             Volunteer Connect Consultant Ltd
           </h2>
           <p className="text-muted">

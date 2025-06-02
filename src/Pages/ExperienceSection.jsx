@@ -13,9 +13,9 @@ const ExperienceSection = () => {
       <div className="row align-items-center">
         {/* Years Box */}
         <div className="col-12 col-md-3 mb-4 mb-md-0" data-aos="zoom-in">
-          <div className="border border-4 border-primary text-center py-5">
+          <div className="border border-4 border-black text-center py-5">
             <h1 className="display-3 fw-bold text-danger">8</h1>
-            <p className="mb-0">Volunteer Connect</p>
+            <p className="mb-0 fw-bold text-black">Volunteer Connect</p>
           </div>
         </div>
 
