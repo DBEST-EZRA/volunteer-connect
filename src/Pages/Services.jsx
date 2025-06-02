@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Services.css";
@@ -9,35 +10,35 @@ const services = [
     title: "HYGIENE SERVICES",
     description:
       "Hygiene services that are effective, efficient and unobtrusive.",
-    icon: "/icons/rocket.png",
+    icon: "bi-rocket",
   },
   {
     title: "PEST CONTROL",
     description: "Provides specialist pest control services.",
-    icon: "/icons/target.png",
+    icon: "bi-bug",
   },
   {
     title: "WASTE MANAGEMENT",
     description:
       "Hurricane global makes good business sense to clear all junk from your premises.",
-    icon: "/icons/chart.png",
+    icon: "bi-trash",
   },
   {
     title: "COMMERCIAL LANDSCAPING",
     description:
       "Process development helps to maintain, set up and implement and ensure.",
-    icon: "/icons/circle.png",
+    icon: "bi-tree",
   },
   {
     title: "LABOUR OUTSOURCING",
     description:
       "Our expertise helps you to take control, leave out the complexity, make",
-    icon: "/icons/tools.png",
+    icon: "bi-person-gear",
   },
   {
     title: "GENERAL BUILDING REPAIR AND MAINTENANCE",
     description: "As reactive and planned property maintenance specialists.",
-    icon: "/icons/bar.png",
+    icon: "bi-building-gear",
   },
 ];
 
@@ -49,20 +50,16 @@ const Services = () => {
   return (
     <section className="container py-5">
       <div className="row g-4">
-        {services.map((service, idx) => (
+        {services.map((service, index) => (
           <div
             className="col-md-6 col-lg-4"
-            key={idx}
+            key={index}
             data-aos="fade-up"
-            data-aos-delay={idx * 100}
+            data-aos-delay={index * 100}
           >
-            <div className="service-card p-4 border h-100 shadow-sm">
-              <div className="mb-3 text-center">
-                <img
-                  src={service.icon}
-                  alt={service.title}
-                  className="service-icon"
-                />
+            <div className="service-card p-4 h-100 border shadow-sm">
+              <div className="text-center mb-3">
+                <i className={`bi ${service.icon} service-icon`}></i>
               </div>
               <h5 className="text-uppercase fw-bold text-primary">
                 {service.title}
