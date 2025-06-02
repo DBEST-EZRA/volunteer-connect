@@ -1,0 +1,4 @@
+/* Optional for hover or visual polish */
+ul li span:last-child {
+  color: #333;
+}
